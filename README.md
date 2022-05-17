@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @rosan38
+- 👀 I’m interested in programming
+- 🌱 I’m currently learning and working in java
+- 📫 How to reach me http://rroshan.com.np
