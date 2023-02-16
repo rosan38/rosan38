@@ -1,0 +1,199 @@
+<link rel="stylesheet" href="/common/design/user/css/all.css?v=2.1">
+<div id="contents" class="main-content-item-detail" xmlns="http://www.w3.org/1999/html">
+    <div id="topicpath">
+        <ul class="clearfix">
+            <li class="home"><a href="https://www.cbox.nu/">オリジナルグッズコンシェル</a></li>
+            <li><a href="/">オンデマンドサービス</a></li>
+            <li><strong>アイテム一覧</strong></li>
+            <input type="text" name="site" value="item-detail" style="display: none">
+        </ul>
+    </div>
+    <!--topicpath end-->
+    <main id="main_full" >
+        <!-- デザインランキング -->
+        <section class="slider-top-id">
+            <div class="slider-image-top-id">
+                <!--# draw bannerAdmin #-->
+            </div>
+        </section>
+        <section class="category-item-details">
+            <div class="list-category-item-details">
+                <!--# draw categoryItemListPage #-->
+            </div>
+            <!--# if bufferStart val (!--# variable category_more #--) == 1 #-->
+            <p class="category-more">全てのカテゴリをみる</p>
+            <!--# if bufferEnd #-->
+        </section>
+        <!--		<section class="day-add-news">-->
+        <!--			<div class="list-day-add-news">-->
+        <!--				&lt;!&ndash;# draw drawNews #&ndash;&gt;-->
+        <!--			</div>-->
+        <!--		</section>-->
+        <section class="bg-gray-full-2 dpt-50 dpb-50">
+            <h2 class="text-center dpb-50 title-detail">画像をアップして1個からオリジナルグッズをつくろう</h2>
+            <div class="filter-details d-flex justify-content-end">
+                <div class="select-with-option">
+                    <div class="select-with-status d-flex align-items-center">
+                        <span>カテゴリ</span>
+                        <span><img src="/common/img/ic-arrow-down-details.png" alt="arrow down" class="pc icon"></span>
+                    </div>
+                    <div class="select-with-list list-cate" style="height: 300px">
+                        <div class="item">すべて</div>
+                        <!--# draw drawCategoryCbox pc master_categories item-detail #-->
+                    </div>
+                </div>
+                <div class="select-with-option">
+                    <div class="select-with-status d-flex align-items-center">
+                        <span>おすすめ順</span>
+                        <span><img src="/common/img/ic-arrow-down-details.png" alt="arrow down" class="pc icon"></span>
+                    </div>
+                    <div class="select-with-list list-price">
+                        <div class="item" data-value="recommend">おすすめ順</div>
+                        <div class="item" data-value="lowest">価格が安い順</div>
+                        <div class="item" data-value="highest">価格が高い順</div>
+                    </div>
+                </div>
+            </div>
+            <!--# draw drawDisplayItemType 16 #-->
+        </section>
+
+        <!-- デザインランキング -->
+        <section class="bg-green-base cv d-flex justify-content-center">
+            <a href="<!--# code getDrawToolLink (!--# val false #--) (!--# val false #--) (!--# val false #--) #-->" class="btn">かんたんデザインツールをつかってみる</a>
+        </section>
+        <!--# if bufferStart val (!--# code checkItemPageStateFAQ #--) == 1 #-->
+        <section class="dpt-50 dpb-50">
+            <h2 class="text-center title-detail">よくある質問</h2>
+            <div class="conBox">
+                <div id="faqArea">
+                    <!--# draw drawItemPageFAQ #-->
+                </div>
+            </div>
+            <div class="btn-read-more-faq btn-black-radius d-flex justify-content-center dpt-50">
+                <a style="width: 305px" href="/page.php?p=faq">よくある質問ページへ</a>
+            </div>
+        </section>
+        <section class="list-news-index bg-gray-color">
+            <div class="container_s1">
+                <h3 class="ttl text-center">おすすめ情報</h3>
+                <div class="list-news-n d-flex-ct flex-wrap">
+                    <!--# draw topPageNewList #-->
+                </div>
+                <a href="/news" class="btn-read-more-black">もっと見る</a>
+            </div>
+        </section>
+        <div class="banner area">
+            <div class="inner">
+                <a href="https://ecobag.cbox.nu/"><img src="/common/img/banner.png" alt="オリジナルエコバッグ、トートバッグを作ろう！" class="pc"></a>
+            </div>
+        </div>
+        <!--# if bufferEnd #-->
+    </main>
+
+    <!--main end-->
+</div>
+<style>
+    /*star*/
+    .item-rating .fa {
+        color: #ffbb00;
+        font-size: 20px;
+        margin-left: 3px;
+    }
+
+    .sub-category{
+        font-size: 12px;
+        color: #555555;
+    }
+
+    .price{
+        margin-bottom: -5px;
+    }
+
+    .center-rating-star .box-rating-star {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .price-content .p-stop-selling .stop-selling{
+        margin-top: 29px;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        line-height: 19px !important;
+        font-weight: bold;
+        color: #000;
+        width: 100%;
+        margin-right: 0;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+    /*end star*/
+
+    .item_detail_new_list_ct .item_list_detail .price-content {
+        height: 150px;
+        max-height: 150px;
+    }
+
+    .list-cate {
+        width: 230px !important;
+    }
+
+    .item_detail li span{
+        color: red !important;
+        background-color: #ffffff !important;
+    }
+    .item_list_box .add-item-embroidery {padding: 0 5px;margin: 0}
+
+    .menu-header .none-list-detail {
+        display: none;
+    }
+
+    .menu-header .block-list-detail {
+        display: block !important;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .loading {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    .banner-title{
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        top: 270px;
+        left: 100px;
+        font-size: 2rem;
+    }
+
+    .banner-comment{
+        position: absolute;
+        color: white;
+        top: 320px;
+        left: 100px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .img-container{
+        position: relative;
+    }
+    .sale_tag{
+        color: white;
+        position: absolute;
+        /*top: 0;*/
+        right: 0;
+        background-color: red;
+        width: 80px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+    }
+    .category-item-details{
+        margin-bottom: 30px;
+    }
+</style>
+<!--contents end-->
+<!--# draw drawScriptBreadCrumbsList item_detail #-->
+<!--# draw setJsFile /common/js/pc/files/item-detail-page.js?v=1.2 #-->
