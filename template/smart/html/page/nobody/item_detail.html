@@ -1,0 +1,218 @@
+<!--# draw setHeadTitle 商品と価格一覧｜芸能人などのコラボTシャツ満載！無料でオリジナルデザインＴシャツ等のアイテムを作って販売できるショッピングモールサイト「Up-T（アップティー）」 #-->
+<!--<link rel="stylesheet" href="/common/smart/design/css/all.min.css?v=1.17">-->
+<link rel="stylesheet" href="/common/smart/design/css/item_detail_new_list_sp.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<div id="contents" class="clearfix">
+	<div id="topicpath">
+		<ul class="clearfix">
+			<li class="home"><a href="https://www.cbox.nu/">オリジナルグッズコンシェル</a></li>
+			<li><a href="/">オンデマンドサービス</a></li>
+			<li><strong>アイテム一覧</strong></li>
+			<input type="text" name="site" value="item-detail" style="display: none">
+		</ul>
+	</div>
+	<!--topicpath end-->
+	<main id="main" >
+		<!-- デザインランキング -->
+		<section class="slider-top-id">
+			<div class="slider-image-top-id">
+				<!--# draw bannerAdmin #-->
+			</div>
+		</section>
+		<section class="category-item-details">
+			<div class="list-category-item-details">
+				<!--# draw categoryItemListPage #-->
+			</div>
+			<!--# if bufferStart val (!--# variable category_more #--) == 1 #-->
+			<p class="category-more">全てのカテゴリをみる</p>
+			<!--# if bufferEnd #-->
+		</section>
+		<section class="ranking ranking_sp dmb-30">
+			<div class="container_s1 bg">
+				<div class="list-ranking list-ranking_sp align-items-center">
+					<div class="head-ranking text-center dmb-30" style="padding-right: 0">
+						<h3>ランキング</h3>
+						<div class="custom-select-i">
+							<select id="item_category_id">
+								<option value="2" selected>トート・エコバッグ</option>
+								<option value="1">Tシャツ・衣類</option>
+								<option value="3">タンブラー・雑貨</option>
+							</select>
+						</div>
+					</div>
+					<div class="list-ranking-cate list-ranking-cate_sp">
+						<!--# draw drawListItemRanking #-->
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="bg-gray-full-2 dpt-50 dpb-50">
+			<h2 class="text-center dpb-30">画像をアップして1個からオリジナルグッズをつくろう</h2>
+			<div class="filter-details d-flex justify-content-end">
+				<select name="boxes" class="boxselect list-cate">
+					<option selected disabled style="display: none">カテゴリ</option>
+					<option>すべて</option>
+					<!--# draw drawCategoryCbox sp master_categories item-detail #-->
+				</select>
+				<select name="boxes" class="boxselect list-price">
+					<option selected disabled style="display: none">おすすめ順</option>
+					<option value="recommend">おすすめ順</option>
+					<option value="lowest">価格が安い順</option>
+					<option value="highest">価格が高い順</option>
+				</select>
+			</div>
+				<!--# draw drawDisplayItemType 8 #-->
+		</section>
+
+		<!-- デザインランキング -->
+		<section class="bg-green-base cv d-flex justify-content-center">
+			<a href="<!--# code getDrawToolLink (!--# val false #--) (!--# val false #--) (!--# val false #--) #-->" class="btn">かんたんデザインツールをつかってみる</a>
+		</section>
+		<!--# if bufferStart val (!--# code checkItemPageStateFAQ #--) == 1 #-->
+		<section class="dpt-50 dpb-50">
+			<h2 class="text-center title-detail">よくある質問</h2>
+			<div id="qa">
+				<div class="inner">
+					<div class="conBox">
+						<div id="faqArea">
+							<!--# draw drawItemPageFAQ #-->
+						</div>
+					</div>
+					<div class="btn-read-more-faq btn-black-radius d-flex justify-content-center dpt-50">
+						<a href="/page.php?p=faq">よくある質問ページへ</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="list-news-index bg-gray-color">
+			<div class="container_s1">
+				<h3 class="ttl text-center">おすすめ情報</h3>
+				<div class="list-news-n d-flex-ct flex-wrap" style="margin-bottom: 20px">
+					<!--# draw topPageNewList #-->
+				</div>
+				<a href="/news" class="btn-read-more-black">もっと見る</a>
+			</div>
+		</section>
+		<div class="banner area">
+			<div class="inner">
+				<a href="https://ecobag.cbox.nu/"><img src="/common/img/banner_sp.png" alt="オリジナルエコバッグ、トートバッグを作ろう！" class="sp"></a>
+			</div>
+		</div>
+		<!--# if bufferEnd #-->
+	</main>
+	<!--main end-->
+	<!--# draw drawParts other side_bar #-->
+
+  </div>
+  <!--contents end-->
+<style>
+	/* Safari */
+	@-webkit-keyframes spin {
+		0% { -webkit-transform: rotate(0deg); }
+		100% { -webkit-transform: rotate(360deg); }
+	}
+
+	@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+
+    
+    .list-header-top a.tel-new strong {
+        font-size: 9px;
+        font-weight: 700;
+    }
+    
+    .list-header-top a.tel-new span {
+        font-size: 13px;
+    }
+	.box_item_price span {
+		font-size: 10px !important;
+	}
+	.sub-category{
+		font-size: 10px !important;
+		color: #555555;
+	}
+
+	.price{
+		margin-bottom: -5px;
+	}
+
+	.loading {
+		width: 25px;
+		margin-top: 10px;
+	}
+	.slick-prev.pull-left{
+		left: 0;
+		z-index: 9;
+	}
+	.slick-next.pull-right{
+		right: 0;
+	}
+	.list-category-item-details {
+		grid-template-columns: 50% 50%;
+	}
+	.list-day-add-news span{
+		width: 30%;
+	}
+	.list-day-add-news span.btn{
+		width: 80%;
+	}
+	.list-category-item-details a{
+		font-size: 12px;
+	}
+	.slick-slide img{
+		width: 80% !important;
+	}
+
+	.banner-title{
+		position: absolute;
+		color: white;
+		font-weight: bold;
+		top: 75px;
+		left: 50px;
+		font-size: 0.8rem;
+	}
+
+	.banner-comment{
+		position: absolute;
+		color: white;
+		top: 95px;
+		left: 50px;
+		font-size: 0.6rem;
+		font-weight: bold;
+	}
+
+	.list-day-add-news .btn{
+		margin-top: 0;
+	}
+	.list-day-add-news .btn a{
+		text-align: left;
+		font-size: 11px;
+	}
+	.category-item-details{
+		margin-bottom: 30px;
+	}
+	.discount-coupon {
+		font-size: 10px !important;
+		margin-top: 10px;
+		color: red;
+	}
+	.img-container{
+		 position: relative;
+	 }
+	.sale_tag{
+		color: white;
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: red;
+		width: 80px;
+		text-align: center;
+		height: 30px;
+		line-height: 30px;
+	}
+</style>
+<!--# draw drawScriptBreadCrumbsList item_detail #-->
+<!--# draw setJsFile /common/js/sp/files/item-detail-page.js?v=1.2 #-->
+<!--# draw setJsFile /common/js/item_ranking.js?v=1.2 #-->
